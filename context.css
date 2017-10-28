@@ -1,0 +1,123 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'fgrotesk';
+    src: url('fonts/fgrotesk_book-regular-webfont.woff2') format('woff2'),
+         url('fonts/fgrotesk_book-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'fgrotesk';
+    src: url('fonts/fgrotesk_book-italic-webfont.woff2') format('woff2'),
+         url('fonts/fgrotesk_book-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'fgrotesk';
+    src: url('fonts/fgrotesk_bold-regular-webfont.woff2') format('woff2'),
+         url('fonts/fgrotesk_bold-regular-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body{
+    background: rgb(200,200,200);
+	font-family: 'fgrotesk', sans-serif;
+	color: #333;
+	line-height: 1.2;
+}
+
+h1{
+    font-size: 1.2rem;
+}
+
+
+#comments{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#cover{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+.post{
+    width: 300px;
+    padding: 1em;
+    background: white;
+    border: 1px solid #bababa;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+    float: left;
+    margin: 1em;
+}
+
+.title{
+    font-weight: bold;
+}
+
+.medium{
+    font-style: italic;
+    margin-bottom: 1em;
+}
+/*.title::before{
+    content: "Title";
+}
+.medium::before{
+    content: "Medium";
+}
+.description::before{
+    content: "Description";
+}
+*/
+
+.time{
+    color: #bababa;
+    font-size: .8em;
+    margin-top: 1rem;
+}
+
+
+.time::before{
+    content: "Submitted ";
+}
+
+form{
+    border: 1px solid black;
+    background: white;
+    min-width: 300px;
+    padding: 1em;
+    margin: auto;
+}
+input, textarea, button{
+    margin: auto;
+    margin-top: .5em;
+    padding: .5em;
+    font-size: 1em;
+    border: 1px solid black;
+    color: black;
+    font-family: 'fgrotesk', sans-serif;
+    display: block;
+    width: 100%;
+}
+textarea{
+    resize: vertical;
+}
+button{
+    background: rgb(200,200,200);
+}
+button:hover{
+    background: white;
+
+}
